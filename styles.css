@@ -234,3 +234,32 @@ footer {
   max-width: 48ch;
 }
 .thanks .btn { margin-top: 10px; }
+
+/* Second product + collection notes */
+.product-alt {
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.cross-link {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 16px;
+}
+.cross-link a { color: var(--burgundy); }
+.complete-note {
+  margin-top: 18px;
+  padding: 16px 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.complete-note strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.life-grid-3 { grid-template-columns: 1.1fr 1fr 1fr; }
+
+@media (max-width: 900px) {
+  .life-grid-3 { grid-template-columns: 1fr; }
+}

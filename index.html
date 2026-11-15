@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Velvet Noel — The Statement Bow</title>
-  <meta name="description" content="The oversized velvet holiday bow for doors, trees and staircases. Pre-tied, reusable, and made to be the only decoration you need.">
+  <title>Velvet Noel — The Statement Bow &amp; Tree Skirt</title>
+  <meta name="description" content="The oversized velvet holiday bow and a ruffled 120 cm velvet tree skirt, in crimson, forest and champagne. Pre-tied, reusable, with standard worldwide shipping included.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -15,13 +15,14 @@
     <a class="logo" href="#top">VELVET NOEL</a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#shop">Shop</a></li>
+        <li><a href="#shop">The bow</a></li>
+        <li><a href="#shop-skirt">Tree skirt</a></li>
         <li><a href="#why">Why this bow</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#shipping">Shipping</a></li>
       </ul>
     </nav>
-    <a class="nav-cta" href="#shop">Shop the bow</a>
+    <a class="nav-cta" href="#shop">Shop</a>
   </header>
 
   <section class="hero" id="top">
@@ -38,16 +39,16 @@
       </div>
       <div class="btn-row">
         <a class="btn btn-primary" href="#shop">Shop the Statement Bow</a>
-        <a class="btn btn-ghost" href="#why">See it in a room</a>
+        <a class="btn btn-ghost" href="#shop-skirt">The tree skirt, $36.90</a>
       </div>
     </div>
   </section>
 
-  <section class="product" id="shop">
+  <section class="product" id="shop" data-product data-item-name="The Statement Bow">
     <div class="wrap product-grid">
       <div class="gallery">
         <div class="gallery-main">
-          <img id="main-image" src="images/product-crimson.jpg" alt="The Statement Bow in crimson velvet, photographed on linen">
+          <img src="images/product-crimson.jpg" alt="The Statement Bow in crimson velvet, photographed on linen">
         </div>
         <div class="thumbs" role="list">
           <button type="button" aria-current="true" data-src="images/product-crimson.jpg" data-alt="The Statement Bow in crimson velvet, photographed on linen"><img src="images/product-crimson.jpg" alt=""></button>
@@ -64,7 +65,7 @@
         <p class="sub">About 50 × 180 cm (20 × 71 in), including the long tails. Pre-tied, with a hanging tie on the back. Choose crimson, forest, or champagne.</p>
 
         <div class="field">
-          <span class="label">Color — <em id="color-label">Crimson</em></span>
+          <span class="label">Color — <em data-color-label>Crimson</em></span>
           <div class="swatches">
             <button class="swatch crimson" type="button" aria-pressed="true" aria-label="Crimson" data-color="Crimson"></button>
             <button class="swatch forest" type="button" aria-pressed="false" aria-label="Forest" data-color="Forest"></button>
@@ -82,9 +83,9 @@
         <div class="field">
           <span class="label">Quantity</span>
           <div class="qty">
-            <button type="button" id="qty-minus" aria-label="Decrease quantity">−</button>
-            <button type="button" id="qty-value" disabled>1</button>
-            <button type="button" id="qty-plus" aria-label="Increase quantity">+</button>
+            <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+            <button type="button" data-qty-value disabled>1</button>
+            <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
           </div>
         </div>
 
@@ -95,9 +96,9 @@
             <input type="hidden" name="item_name" value="The Statement Bow">
             <input type="hidden" name="amount" value="29.90">
             <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="quantity" id="paypal-qty" value="1">
+            <input type="hidden" name="quantity" data-paypal-qty value="1">
             <input type="hidden" name="on0" value="Color">
-            <input type="hidden" name="os0" id="paypal-color" value="Crimson">
+            <input type="hidden" name="os0" data-paypal-color value="Crimson">
             <input type="hidden" name="no_shipping" value="2">
             <input type="hidden" name="return" value="https://velvet-noel.github.io/thanks.html">
             <input type="hidden" name="cancel_return" value="https://velvet-noel.github.io/">
@@ -105,6 +106,76 @@
           </form>
         </div>
         <p class="fine">Pay with PayPal or a debit or credit card — a PayPal account is not required. Standard delivery is typically about 7–15 business days to the US and Western Europe, and can be longer elsewhere or at peak season. We usually ship within 1–3 days. Order early if you need it under the tree.</p>
+        <p class="cross-link">Complete the tree with the <a href="#shop-skirt">Velvet Ruffle Tree Skirt</a> in the same color.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="product product-alt" id="shop-skirt" data-product data-item-name="Velvet Ruffle Tree Skirt" data-img-crimson="images/skirt-crimson.jpg" data-img-forest="images/skirt-forest.jpg" data-img-champagne="images/skirt-champagne.jpg">
+    <div class="wrap product-grid">
+      <div class="gallery">
+        <div class="gallery-main">
+          <img src="images/skirt-crimson.jpg" alt="A ruffled crimson velvet tree skirt around the base of a lit Christmas tree">
+        </div>
+        <div class="thumbs" role="list">
+          <button type="button" aria-current="true" data-src="images/skirt-crimson.jpg" data-alt="A ruffled crimson velvet tree skirt around the base of a lit Christmas tree"><img src="images/skirt-crimson.jpg" alt=""></button>
+          <button type="button" data-src="images/skirt-forest.jpg" data-alt="A ruffled forest-green velvet tree skirt around the base of a lit Christmas tree"><img src="images/skirt-forest.jpg" alt=""></button>
+          <button type="button" data-src="images/skirt-champagne.jpg" data-alt="A ruffled champagne velvet tree skirt around the base of a lit Christmas tree"><img src="images/skirt-champagne.jpg" alt=""></button>
+          <button type="button" data-src="images/skirt-detail.jpg" data-alt="Close-up of the gathered ruffle on the crimson velvet tree skirt"><img src="images/skirt-detail.jpg" alt=""></button>
+        </div>
+      </div>
+
+      <div class="buy-box">
+        <p class="kicker">Velvet Noel</p>
+        <h2>Velvet Ruffle Tree Skirt</h2>
+        <p class="price">$36.90 USD</p>
+        <p class="sub">About 120 cm (48 in) across, with a gathered ruffle around the edge and an opening that wraps around the trunk. Choose crimson, forest, or champagne — the same three colors as the Statement Bow.</p>
+
+        <div class="field">
+          <span class="label">Color — <em data-color-label>Crimson</em></span>
+          <div class="swatches">
+            <button class="swatch crimson" type="button" aria-pressed="true" aria-label="Crimson" data-color="Crimson"></button>
+            <button class="swatch forest" type="button" aria-pressed="false" aria-label="Forest" data-color="Forest"></button>
+            <button class="swatch champagne" type="button" aria-pressed="false" aria-label="Champagne" data-color="Champagne"></button>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="label">Size</span>
+          <div class="sizes">
+            <button class="size" type="button" aria-pressed="true">120 cm · 48 in</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="label">Quantity</span>
+          <div class="qty">
+            <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+            <button type="button" data-qty-value disabled>1</button>
+            <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="buy-actions">
+          <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="lukasfaceit3@seznam.cz">
+            <input type="hidden" name="item_name" data-paypal-item value="Velvet Ruffle Tree Skirt — Crimson">
+            <input type="hidden" name="amount" value="36.90">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="quantity" data-paypal-qty value="1">
+            <input type="hidden" name="on0" value="Color">
+            <input type="hidden" name="os0" data-paypal-color value="Crimson">
+            <input type="hidden" name="no_shipping" value="2">
+            <input type="hidden" name="return" value="https://velvet-noel.github.io/thanks.html">
+            <input type="hidden" name="cancel_return" value="https://velvet-noel.github.io/">
+            <button class="btn btn-paypal" type="submit">Buy with PayPal</button>
+          </form>
+        </div>
+        <p class="fine">Pay with PayPal or a debit or credit card — a PayPal account is not required. It ships folded; shake the ruffles out and let the velvet sit around the stand. Keep it clear of candles and hot lights. Standard delivery is typically about 7–15 business days to the US and Western Europe, and can be longer elsewhere or at peak season. We usually ship within 1–3 days.</p>
+        <aside class="complete-note">
+          <p><strong>Complete the tree.</strong> The skirt is made to sit under the tree with the Statement Bow in the same color. Each piece is sold on its own — the bow is $29.90 and the skirt is $36.90 — and you check them out separately.</p>
+        </aside>
       </div>
     </div>
   </section>
@@ -135,12 +206,16 @@
       <div class="section-head">
         <p class="kicker">In the house</p>
         <h2>The bow that finishes the room.</h2>
-        <p>Photographs are original artwork made for this page. The bow you receive will be a real velvet decoration in the color you choose; fluff it on arrival so the loops sit full.</p>
+        <p>Photographs are original artwork made for this page. The pieces you receive will be real velvet decorations in the color you choose; fluff the bow and shake out the skirt on arrival so they sit full.</p>
       </div>
-      <div class="life-grid">
+      <div class="life-grid life-grid-3">
         <figure class="life-card">
           <img src="images/lifestyle-tree.jpg" alt="Forest velvet bow as a tree topper in a cream living room">
           <figcaption>As a tree topper — Forest</figcaption>
+        </figure>
+        <figure class="life-card">
+          <img src="images/skirt-crimson.jpg" alt="Crimson ruffled velvet tree skirt at the base of a lit Christmas tree">
+          <figcaption>Under the tree — Crimson skirt</figcaption>
         </figure>
         <figure class="life-card">
           <img src="images/lifestyle-stairs.jpg" alt="Champagne velvet bows on a staircase with cedar garland">
@@ -155,12 +230,12 @@
     <div>
       <p class="kicker">Materials</p>
       <h2>Soft velvet, honest expectations.</h2>
-      <p>The Statement Bow is a decorative velvet bow with long streamers. It is not a licensed designer piece, and it is not weatherproof for unsheltered outdoor use in rain or snow. Bring it in if the weather turns, and keep it away from open flames.</p>
+      <p>The Statement Bow is a decorative velvet bow with long streamers. The tree skirt is a soft, ruffled velvet floor piece, not a rigid or fireproof tree collar. Neither is a licensed designer piece, and neither is weatherproof for unsheltered outdoor use in rain or snow. Bring the bow in if the weather turns, and keep both away from open flames.</p>
       <ol>
-        <li>Unpack and gently pull the loops into shape.</li>
+        <li>Unpack and gently pull the bow loops into shape, or shake out the skirt ruffles.</li>
         <li>If there are creases, use a low steam iron held above the fabric — do not press hard on the pile.</li>
-        <li>Use the back tie to fasten it to a wreath hook, a door knocker, a tree top, or a banister.</li>
-        <li>After the holidays, fold it loosely and store it in a dry place.</li>
+        <li>Use the back tie to fasten the bow to a wreath hook, a door knocker, a tree top, or a banister. Wrap the skirt around the trunk and smooth it on the floor.</li>
+        <li>After the holidays, fold each piece loosely and store it in a dry place.</li>
       </ol>
     </div>
   </section>
@@ -169,24 +244,32 @@
     <p class="kicker">Questions</p>
     <h2>FAQ</h2>
     <div class="faq-item open">
-      <button type="button">How big is it, really? <span>+</span></button>
+      <button type="button">How big is the bow, really? <span>+</span></button>
       <div class="answer">The Statement size is about 50 cm (20 in) wide, with tails of about 180 cm (71 in). That is the large door-and-tree size people film, not a gift-wrap bow. Handmade and packed bows can vary by a couple of centimetres.</div>
     </div>
     <div class="faq-item">
+      <button type="button">How big is the tree skirt? <span>+</span></button>
+      <div class="answer">The Velvet Ruffle Tree Skirt is about 120 cm (48 in) across. That is a common size for a slim-to-medium tree; on a very wide tree it will look more like a collar than a full floor skirt. Handmade pieces can vary by a couple of centimetres. It ships folded, so shake the ruffles out before you put it down.</div>
+    </div>
+    <div class="faq-item">
+      <button type="button">Can I order the bow and the skirt together? <span>+</span></button>
+      <div class="answer">Yes. Pick the same color on each product and check them out one after the other. They are priced separately — $29.90 for the bow and $36.90 for the skirt — and there is no combined discount at checkout.</div>
+    </div>
+    <div class="faq-item">
       <button type="button">Will it look like the photos? <span>+</span></button>
-      <div class="answer">The photographs on this page were created for Velvet Noel and show the look we are aiming for: a full, oversized velvet bow. The physical product is a textile decoration that ships folded, so it needs a minute of fluffing (and sometimes a light steam) before it looks its best. Velvet dye lots can also vary slightly.</div>
+      <div class="answer">The photographs on this page were created for Velvet Noel and show the look we are aiming for: a full, oversized velvet bow and a ruffled velvet tree skirt. The physical products are textile decorations that ship folded, so they need a minute of fluffing (and sometimes a light steam) before they look their best. Velvet dye lots can also vary slightly.</div>
     </div>
     <div class="faq-item">
       <button type="button">When will it arrive? <span>+</span></button>
       <div class="answer">We usually ship within 1–3 days. Standard delivery is typically about 7–15 business days to the United States and Western Europe, and can be 15–45 days on ordinary international shipping or to other countries. Peak December traffic can add delays. If you need it for Christmas, order as early as you can.</div>
     </div>
     <div class="faq-item">
-      <button type="button">Can I hang it outside? <span>+</span></button>
-      <div class="answer">It is fine on a covered porch or a front door that stays reasonably dry. It is not a waterproof outdoor product. Rain, snow and strong sun will mark or fade the velvet.</div>
+      <button type="button">Can I hang the bow outside? <span>+</span></button>
+      <div class="answer">It is fine on a covered porch or a front door that stays reasonably dry. It is not a waterproof outdoor product. Rain, snow and strong sun will mark or fade the velvet. The tree skirt is for indoor use around the tree.</div>
     </div>
     <div class="faq-item">
       <button type="button">What is your return policy? <span>+</span></button>
-      <div class="answer">If you shop from the EU or UK, you have a 14-day withdrawal period after delivery for unused items, as required by consumer law. The bow should be in resaleable condition. Return shipping may be at your expense unless the item is faulty or not as described. See Shipping &amp; returns below.</div>
+      <div class="answer">If you shop from the EU or UK, you have a 14-day withdrawal period after delivery for unused items, as required by consumer law. Items should be in resaleable condition. Return shipping may be at your expense unless the item is faulty or not as described. See Shipping &amp; returns below.</div>
     </div>
   </section>
 
@@ -196,11 +279,11 @@
     <div class="policy-grid">
       <article>
         <h3>Shipping</h3>
-        <p>The $29.90 price includes standard international shipping to most addresses. We do not promise overnight or two-day delivery. Orders are fulfilled by a dropshipping partner. We usually ship within 1–3 days, and delivery is typically about 7–15 business days to the United States and Western Europe; it can take longer to other countries or at peak season. Import VAT, duties, or local fees — including any EU import charges — may be collected at checkout or by the carrier, depending on the destination. Tracking is shared by email once the parcel is scanned.</p>
+        <p>Prices include standard international shipping to most addresses. We do not promise overnight or two-day delivery. Orders are fulfilled by a dropshipping partner. We usually ship within 1–3 days, and delivery is typically about 7–15 business days to the United States and Western Europe; it can take longer to other countries or at peak season. Import VAT, duties, or local fees — including any EU import charges — may be collected at checkout or by the carrier, depending on the destination. Tracking is shared by email once the parcel is scanned.</p>
       </article>
       <article>
         <h3>Returns</h3>
-        <p>EU and UK customers may withdraw within 14 days of receiving the bow. Contact us first so we can send the return address. Faulty or mis-described items will be refunded or replaced. Change-of-mind returns should be unused and reasonably packed. A bow that has been cut, written on, or clearly used as décor may not be refundable outside your legal rights.</p>
+        <p>EU and UK customers may withdraw within 14 days of receiving the order. Contact us first so we can send the return address. Faulty or mis-described items will be refunded or replaced. Change-of-mind returns should be unused and reasonably packed. An item that has been cut, written on, or clearly used as décor may not be refundable outside your legal rights.</p>
       </article>
     </div>
   </section>
@@ -212,7 +295,7 @@
   </section>
 
   <footer class="wrap">
-    <div>© 2026 Velvet Noel. The Statement Bow.</div>
+    <div>© 2026 Velvet Noel. The Statement Bow and the Velvet Ruffle Tree Skirt.</div>
     <div>Photographs are original images created for this page, not supplier stock photos.</div>
   </footer>
 
