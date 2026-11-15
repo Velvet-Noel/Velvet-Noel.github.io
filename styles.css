@@ -212,3 +212,25 @@ footer {
   .hero-media { min-height: 420px; }
   .split img, .life-card { height: 360px; min-height: 360px; }
 }
+
+.paypal-form { display: grid; }
+.paypal-form .btn { width: 100%; }
+
+.thanks {
+  padding: 88px 0 120px;
+  min-height: 60vh;
+  max-width: 640px;
+}
+.thanks h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.05;
+  margin: 10px 0 18px;
+}
+.thanks p {
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  max-width: 48ch;
+}
+.thanks .btn { margin-top: 10px; }

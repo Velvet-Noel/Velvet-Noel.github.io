@@ -10,23 +10,29 @@
   });
 
   const colorLabel = document.getElementById("color-label");
+  const paypalColor = document.getElementById("paypal-color");
   document.querySelectorAll(".swatch").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".swatch").forEach((b) => b.setAttribute("aria-pressed", "false"));
       btn.setAttribute("aria-pressed", "true");
       colorLabel.textContent = btn.dataset.color;
+      if (paypalColor) paypalColor.value = btn.dataset.color;
     });
   });
 
   let qty = 1;
   const qtyValue = document.getElementById("qty-value");
-  document.getElementById("qty-minus").addEventListener("click", () => {
-    qty = Math.max(1, qty - 1);
+  const paypalQty = document.getElementById("paypal-qty");
+  const setQty = (next) => {
+    qty = next;
     qtyValue.textContent = qty;
+    if (paypalQty) paypalQty.value = String(qty);
+  };
+  document.getElementById("qty-minus").addEventListener("click", () => {
+    setQty(Math.max(1, qty - 1));
   });
   document.getElementById("qty-plus").addEventListener("click", () => {
-    qty = Math.min(10, qty + 1);
-    qtyValue.textContent = qty;
+    setQty(Math.min(10, qty + 1));
   });
 
   document.querySelectorAll(".faq-item button").forEach((btn) => {
@@ -36,24 +42,5 @@
       document.querySelectorAll(".faq-item").forEach((i) => i.classList.remove("open"));
       if (!open) item.classList.add("open");
     });
-  });
-
-  const modal = document.getElementById("pay-modal");
-  const copy = document.getElementById("pay-copy");
-  document.querySelectorAll("[data-pay]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const kind = btn.dataset.pay === "paypal" ? "PayPal" : "Stripe Payment Link";
-      copy.textContent =
-        "This " +
-        kind +
-        " button is a placeholder. Paste your live checkout URL into this button when the account is ready. No payment is taken from this preview page.";
-      modal.hidden = false;
-    });
-  });
-  document.getElementById("pay-close").addEventListener("click", () => {
-    modal.hidden = true;
-  });
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) modal.hidden = true;
   });
 })();
